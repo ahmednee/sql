@@ -207,7 +207,12 @@ Link if you encounter a paywall: https://archive.is/srKHV or https://web.archive
 
 Consider, for example, concepts of fariness, inequality, social structures, marginalization, intersection of technology and society, etc.
 
+The author, Rida Qadri, argues that databases are not neutral. She uses Pakistan’s national ID database (NADRA) as a case study and discusses how its backend programming reflects the social norms of society. She explains that the database’s design links people through family ties of blood or marriage, assuming that everyone has two married parents and a family headed by a man. However, this design has a flaw: it does not accommodate vulnerable populations such as orphans, single mothers, children born outside marriage, and the khawaja sira community. This creates a huge administrative backlog, leading to delays and pushing people towards workarounds such as fake documents, or leaving them with blocked ID cards. It is pertinent to note that NADRA is a centralized system that serves as the digital ID for Pakistani citizens and is required for almost everything. These issues therefore become a barrier to claiming one’s fundamental rights. According to the author, the design of the database is a social and political decision, not just a technical one. She concludes by suggesting that database designers think critically about identity and fairness.
 
 ```
 Your thoughts...
+
+I am a Pakistani citizen, and I am aware of NADRA’s shortfalls. I agree that the inherent flaws within the database cause a huge administrative backlog. This, in turn, prevents vulnerable people, such as those who are not literate, the elderly, or those who live in villages, from accessing social services such as the financial support provided by provincial governments. However, I would argue the problem is less a deliberate political choice than a matter of limited resources and shifting priorities. What the author did not highlight is the manipulation of this database by front-end data entry officials and others to generate fake ID cards. This corruption is widespread and harmful, not only to the interests of the common man but also to the government, especially in the context of armed conflicts and crises in certain parts of Pakistan. One should also consider that Pakistan is a developing country whose infrastructure is still emerging and moving towards complete digitalization.
 ```
+
+
