@@ -57,7 +57,37 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+**Architecture 1: Type 1 SCD (overwrite)**
+
+| Column | Type |
+|---|---|
+| customer_id (PK, FK → customer) | INT |
+| street_address | TEXT |
+| city | TEXT |
+| province | TEXT |
+| postal_code | TEXT |
+| country | TEXT |
+
+In this design, each customer has only one address row. When a customer moves, the old address is replaced with the new one. This keeps the table small and simple, but the store loses the history of where the customer lived before.
+
+**Architecture 2: Type 2 SCD (retain changes)**
+
+| Column | Type |
+|---|---|
+| address_id (PK) | INT |
+| customer_id (FK → customer) | INT |
+| street_address | TEXT |
+| city | TEXT |
+| province | TEXT |
+| postal_code | TEXT |
+| country | TEXT |
+| start_date | DATE |
+| end_date | DATE |
+| is_current | BOOLEAN |
+
+In this design, a customer can have many address rows. When a customer moves, the old row is not deleted. Its end_date is filled in and is_current is set to 0 (false). A new row is added with the new address, a new start_date, an empty end_date, and is_current set to 1 (true). This keeps the full address history, which is useful for tracking past orders and deliveries, but the table grows over time.
+
+**Summary:** The design that overwrites changes is Type 1. The design that keeps changes is Type 2.
 ```
 
 ***
