@@ -56,7 +56,6 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
-```
 **Architecture 1: Type 1 SCD (overwrite)**
 
 | Column | Type |
@@ -88,7 +87,6 @@ In this design, each customer has only one address row. When a customer moves, t
 In this design, a customer can have many address rows. When a customer moves, the old row is not deleted. Its end_date is filled in and is_current is set to 0 (false). A new row is added with the new address, a new start_date, an empty end_date, and is_current set to 1 (true). This keeps the full address history, which is useful for tracking past orders and deliveries, but the table grows over time.
 
 **Summary:** The design that overwrites changes is Type 1. The design that keeps changes is Type 2.
-```
 
 ***
 
@@ -221,6 +219,8 @@ Read: Boykis, V. (2019, October 16). _Neural nets are just people all the way do
 Consider, for example, concepts of labour, bias, LLM proliferation, moderating content, intersection of technology and society, ect. 
 
 
-```
-Your thoughts...
-```
+Boykis's argument highlights the irony of "intelligent" systems that are supposed to reduce human work, while these systems are built on the labour of people who remain underpaid and unrecognized. I call it ironic because we live in a tech world where social media speaks loudly about human rights violations against workers around the world, while victimizing those who work behind these algorithms. Boykis highlights how systemic marginalization perpetuates itself when people working on datasets such as ImageNet unconsciously label people out of racial prejudice and create racial slurs, which negatively impact groups of people. Their assumptions train the system in such a way that datasets not only profile people but also directly impact the lives of disadvantaged groups, such as refugees and people from East Asia or South Asia. I can relate to this prejudice because I really do not like it when people call delicious Pakistani food Indian food. The inherent "whiteness" within these labels has a long-term effect on the community. One example is calling Pakistani, Sri Lankan and Bangladeshi people simply "Asian" or "South Asian," and calling the languages they speak Hindi.
+
+The Amazon Mechanical Turk example reminds me of the colonial era, when enslaved people worked for their masters to earn a living. Times have changed, but the legacy of colonialism continues to impact the livelihoods of these labourers, who work tirelessly for these organizations and remain underpaid.
+
+There are only a few people like Boykis who highlight the impact of digitalization on our communities. As a socialist, I would demand accountability from these organizations and fair compensation for the labourers, keeping in mind that those who become victims of these "labels" suffer irreversible damage for the rest of their lives. Although I am aware of the consequences of legal cases against social media platforms such as Facebook and Instagram, where these companies paid millions of dollars to governments for breaching privacy policies or for using algorithms that directly impact human cognition, the monetary compensation was never passed on to the affected users of these platforms.
